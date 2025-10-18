@@ -4,10 +4,11 @@ public class Person {
     private String name;
     private String surname;
     private Date birthDate;
+    private float salary;
+
     private boolean anotherCompanyOwner;
     private boolean pensioner;
     private boolean publicServer;
-    private float salary;
 
     public Person(String name, String surname, Date birthDate, boolean anotherCompanyOwner, boolean pensioner, boolean publicServer) {
         this.name = name;

@@ -13,21 +13,14 @@ public class PersonTest {
     }
 
     @Test
-    public void show_full_name() {
-        assertEquals("Paul McCartney", person.fullName());
-    }
-
-    @Test
     public void test_calculateYearlySalary() {
         person.setSalary(1200.0f);
         assertEquals(14400.0f, person.calculateYearlySalary(), 0.01);
     }
 
     @Test
-    public void person_is_MEI() {
-        Person meiPerson = new Person("João", "Silva", new Date(2000, 0, 1), false, false, false);
-        meiPerson.setSalary(5000.0f);
-        assertTrue(meiPerson.isMEI());
+    public void show_full_name() {
+        assertEquals("Paul McCartney", person.fullName());
     }
 
     @Test
@@ -37,4 +30,15 @@ public class PersonTest {
         notMeiPerson.setSalary(15000.0f);
         assertFalse(notMeiPerson.isMEI());
     }
+
+   
+
+    @Test
+    public void person_is_MEI() {
+        Person meiPerson = new Person("João", "Silva", new Date(2000, 0, 1), false, false, false);
+        meiPerson.setSalary(5000.0f);
+        assertTrue(meiPerson.isMEI());
+    }
+
+    
 }
